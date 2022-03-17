@@ -6,6 +6,7 @@ export class CurrentWeather {
         public pressure:string,
         public humidity:string,
         public speed:string,
-        public visibility:string
+        public visibility:string,
+        public icon:string
     ){}
 }

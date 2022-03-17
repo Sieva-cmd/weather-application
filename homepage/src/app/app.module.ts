@@ -9,13 +9,18 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CurrentComponent } from './current/current.component';
 import { ForecastComponent } from './forecast/forecast.component';
+import { ResolveWeatherService } from './resolve-weather.service';
+import { SignUPComponent } from './sign-up/sign-up.component';
+import { SignINComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CurrentComponent,
-    ForecastComponent
+    ForecastComponent,
+    SignUPComponent,
+    SignINComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +28,7 @@ import { ForecastComponent } from './forecast/forecast.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [WeatherService],
+  providers: [WeatherService,ResolveWeatherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
