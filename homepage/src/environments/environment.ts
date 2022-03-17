@@ -4,7 +4,11 @@
 
 export const environment = {
   production: false,
-  api_url :'e1c34a11142d22d0e932a9f6978a4105'
+  api_url :'e1c34a11142d22d0e932a9f6978a4105',
+  base_url:'http://api.openweathermap.org/data/2.5/weather?',
+  appid:'appid'
+
+
 };
 
 /*
